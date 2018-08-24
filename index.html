@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy 3 Months</title>
+    <meta charset="utf-8"/>
+    <script src="./lib/portfolio.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://res.cloudinary.com/jonathol/image/list/jenny.json", true);
+      xhr.onload = function (e) {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            let response = JSON.parse(xhr.response);
+            placeImages(response.resources)
+          } else {
+            console.error(xhr.statusText);
+          }
+        }
+      };
+      xhr.onerror = function (e) {
+        console.error(xhr.statusText);
+      };
+      xhr.send(null);
+    </script>
+    <link rel="stylesheet" href="./assets/main.css" type="text/css"/>
+  </head>
+
+  <body>
+    <!--<header>
+      <h1>Happy 3 Months</h1>
+    </header>
+    <div id="container">
+      <p>
+        Here's a collection of some of my favorite pictures of you. I hope to add this collection as we continue to grow, fall deeper in lover, and live out life together. Thank you for being in my life. Thank you for pushing me to be come a better person. Thank you for encouraging me when I'm down and keeping me in check when I'm out of line. I love you so much!
+      </p>-->
+      <div id="row"></div>
+    <!--</div>-->
+  </body>
+</html>
