@@ -3,6 +3,20 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+html {
+  background: url('http://res.cloudinary.com/jonathol/image/upload/v1535084862/jenny/1528243436350.jpg') no-repeat
+    center -80px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 img,
@@ -30,16 +44,24 @@ embed {
 }
 
 header {
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 50vh;
+  color: white;
 }
 
 .message {
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 auto;
+  color: white;
+  font-size: 24px;
 }
 
+hr {
+  width: 40%;
+  margin: 30px auto;
+}
 #grid {
   max-width: 800px;
   margin: 0 auto;
